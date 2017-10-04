@@ -58,8 +58,8 @@ FusionEKF::~FusionEKF() {}
 
 void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
 
-	float noise_ax = 9
-	float noise_ay = 9
+	float noise_ax = 9;
+	float noise_ay = 9;
   /*****************************************************************************
    *  Initialization
    ****************************************************************************/
