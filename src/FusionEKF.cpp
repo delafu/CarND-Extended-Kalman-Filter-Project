@@ -46,8 +46,7 @@ FusionEKF::FusionEKF() {
 			  0, 0, 1000, 0,
 			  0, 0, 0, 1000;
 			  
-	noise_ax = 9
-	noise_ay = 9
+
 
 
 }
@@ -59,7 +58,8 @@ FusionEKF::~FusionEKF() {}
 
 void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
 
-
+	noise_ax = 9
+	noise_ay = 9
   /*****************************************************************************
    *  Initialization
    ****************************************************************************/
