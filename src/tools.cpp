@@ -62,9 +62,10 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
 
 	//pre-compute a set of terms to avoid repeated calculation
 	float c1 = px*px+py*py;
+	
 	if(c1 < .00001) {
-		px += .001;
-		py += .001;
+		px = .001;
+		py = .001;
 		c1 = px * px + py * py;
 	}
 	float c2 = sqrt(c1);
